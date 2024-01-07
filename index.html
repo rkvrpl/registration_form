@@ -5,9 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/normalize.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
-    <title>Document</title>
+    <title>Регистрация</title>
 </head>
 <body>
+    <form class="form" action="#">
+        <label for="name" class="form__label">Имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя" class="form__input" pattern="([a-zа-яё\ ]+|\d+)" maxlength="20" minlength="2" required />
+        <br />
+
+        <label for="email" class="form__label">Email:</label>
+        <input type="email" id="email" name="email" class="form__input" placeholder="Введите ваш email" required />
+        <br />
+
+        <label for="number" class="form__label">Возраст:</label>
+        <input type="number" id="number" name="age" class="form__input" min="12" max="99" placeholder="Введите ваш возраст" required />
+        <br />
+        
+        <label class="form__label">Ваш пол:</label>
+        <input type="radio" name="sex" id="woman" value="Женский" class="form__input" />Женский<br />
+        <input type="radio" name="sex" id="man" value="Мужской" class="form__input" />Мужской<br />
+
+        <label for="profession" class="form__label">Ваша профессия:</label>
+        <select id="profession" name="profession" class="form__select" required>
+            <option value="">Выберите</option>
+            <option value="Врач">Врач</option>
+            <option value="Программист">Программист</option>
+            <option value="Учитель">Учитель</option>
+            <option value="Дизайнер">Дизайнер</option>
+            <option value="Инженер">Инженер</option>
+            <option value="Продавец">Продавец</option>
+            <option value="Другое">Другое</option>
+        </select>
+        <br />
+
+        <label for="pass">Введите пароль:</label>
+        <input type="password" id="pass" name="password" placeholder="Введите пароль" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]$" required />*
+        <br />
+        <p class="pass__paragraph">*пароль должен содержать как минимум одну заглавную букву, одну строчную букву и одну цифру и быть не менее 8 символов</p>
+        <br />
+
+        <input type="checkbox" id="checkbox" name="checkbox" class="form__checkbox" required />
+		<label for="checkbox">Согласие на обработку персональных данных</label>
+        <br />
+
+        <input name="button" type="submit" value="Зарегистрироваться" class="form__submit" />
+    </form>
     <script src="./assets/scripts/script.js"></script>
 </body>
 </html>

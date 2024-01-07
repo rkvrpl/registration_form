@@ -1,0 +1,18 @@
+.form {
+}
+.form__label {
+}
+.form__input {
+}
+.form__select {
+}
+.pass__paragraph {
+}
+.form__checkbox {
+}
+.form__submit {
+}
+
+input:required:valid {
+    border-color: rgb(18, 172, 18);
+}
