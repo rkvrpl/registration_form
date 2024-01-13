@@ -24,6 +24,11 @@ a{
     background-color: rgba(243, 224, 202, 0.664);
     border: 2px solid rgb(207, 139, 49);
     border-radius: 5px;
+    margin: 10px;
+    width: 60%;
+}
+.form__input[type="radio"]{
+    width: 5%;
 }
 .form__input:hover, 
 .form__select:hover{
