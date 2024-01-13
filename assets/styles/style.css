@@ -49,3 +49,10 @@ a{
 input:required:valid {
     border-color: rgba(119, 211, 116, 0.521);
 }
+p{
+    font-size: 0.3;
+    color: red;
+}
+.paragraph{
+    color: black;
+}
